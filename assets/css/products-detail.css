@@ -720,3 +720,47 @@ body {
     padding-top: 20px;
     padding-bottom: 0px;
 }
+
+/* Locomotive Scroll fixes */
+html.has-scroll-smooth {
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+[data-scroll-container] {
+    min-height: 100vh;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .c-scrollbar {
+        z-index: 1100;
+        transform: scaleX(0.5);
+        right: 5px !important;
+    }
+    
+    .c-scrollbar_thumb {
+        width: 5px;
+        background-color: rgba(234, 70, 54, 0.5);
+    }
+    
+    [data-scroll] {
+        will-change: transform;
+    }
+    
+    /* Optimize animations for mobile */
+    .is-mobile [data-scroll-speed] {
+        transform: none !important;
+    }
+}
+
+/* Fix for iOS momentum scrolling */
+@supports (-webkit-touch-callout: none) {
+    body {
+        -webkit-overflow-scrolling: touch;
+    }
+}

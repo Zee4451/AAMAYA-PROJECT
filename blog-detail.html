@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="assets/css/blog-detail.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- AnyChart -->
-    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
-    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-pie.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
 </head>
 <body>
     <!-- Header Section -->
-    <header class="header">
+    <header class="header" data-scroll-container>
         <div class="container">
             <div class="row v-center">
                 <div class="header-item item-left">
@@ -147,7 +147,7 @@
     <!-- header end -->
 
     <!-- Blog Detail Hero Section -->
-    <section class="blog-detail-hero animate-on-scroll" style="background-image: url('assets/images/blog/sustainable-packaging.jpg')">
+    <section class="blog-detail-hero animate-on-scroll" style="background-image: url('assets/images/blog/blog-detail.jpg')">
         <div class="blog-detail-overlay"></div>
         <div class="blog-detail-container">
             <span class="section-tag animate-on-scroll" >Sustainability</span>
@@ -170,7 +170,7 @@
                 <p class="animate-on-scroll">As environmental consciousness grows, manufacturers are increasingly turning to biodegradable and recyclable materials. From plant-based plastics to mushroom packaging, the industry is witnessing a surge in innovative alternatives to traditional packaging materials.</p>
 
                 <div class="blog-image animate-on-scroll">
-                    <img src="assets/images/blog/eco-materials.jpg" alt="Eco-friendly packaging materials">
+                    <img src="assets/images/blog/Biodegradable-Solutions.jpg" alt="Eco-friendly packaging materials">
                 </div>
 
                 <h2 class="animate-on-scroll">Smart Packaging Technologies</h2>
@@ -203,7 +203,7 @@
             <div class="author-section animate-on-scroll">
                 <div class="author-container">
                     <div class="author-image">
-                        <img src="assets/images/team/john-smith.jpg" alt="John Smith">
+                        <img src="assets/images/profile.jpg" alt="John Smith">
                     </div>
                     <div class="author-info">
                         <h3>John Smith</h3>
@@ -223,7 +223,7 @@
                 <div class="related-posts-grid">
                     <article class="related-post animate-on-scroll">
                         <div class="related-post-image">
-                            <img src="assets/images/blog/recycling-tips.jpg" alt="Recycling Tips">
+                            <img src="assets/images/blog/recyling.jpg" alt="Recycling Tips">
                         </div>
                         <div class="related-post-content">
                             <h3>Essential Recycling Tips for Businesses</h3>
@@ -234,7 +234,7 @@
 
                     <article class="related-post animate-on-scroll">
                         <div class="related-post-image">
-                            <img src="assets/images/blog/biodegradable.jpg" alt="Biodegradable Packaging">
+                            <img src="assets/images/blog/Biodegradable-Solutions.jpg" alt="Biodegradable Packaging">
                         </div>
                         <div class="related-post-content">
                             <h3>The Rise of Biodegradable Packaging</h3>
@@ -259,6 +259,7 @@
     </section>
 
     <script src="assets/js/nav.js"></script>
+    
     <script>
         // Enhanced intersection observer for smoother animations
         const observerOptions = {
