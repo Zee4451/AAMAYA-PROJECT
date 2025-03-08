@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Careers & Contact - Aameya Polymers</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/product-category.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
 
-<body>
+<body data-scroll-container>
     <!-- Header Section -->
     <header class="header">
         <div class="container">
@@ -94,6 +96,7 @@
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="about-us.html">About</a>
+                                
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="blog.html">Blog <i class="fas fa-angle-down"></i></a>
@@ -141,139 +144,106 @@
     </header>
     <!-- header end -->
 
-    <main class="main-content">
-
-        <!-- Contact Info Section -->
-        <section class="contact-info-section parallax-section">
-            <div class="container">
-                <div class="contact-info-grid">
-                    <div class="contact-info-content">
-                        <div class="section-header" data-parallax-depth="0.1">
-                            <h2>Get in Touch</h2>
-                            <p>Visit us or reach out</p>
-                        </div>
-                        <div class="info-cards">
-                            <div class="info-card" data-parallax-depth="0.15">
-                                <div class="card-icon">
-                                    <i class="fas fa-map-marked-alt"></i>
-                                </div>
-                                <div class="card-content">
-                                    <h3>Office</h3>
-                                    <p>508-515, The Capital - 2, Science City Road<br>
-                                    Ahmedabad - 380060, Gujarat</p>
-                                </div>
-                            </div>
-                            <div class="info-card" data-parallax-depth="0.2">
-                                <div class="card-icon">
-                                    <i class="fas fa-phone-alt"></i>
-                                </div>
-                                <div class="card-content">
-                                    <h3>Phone</h3>
-                                    <p>+91-79-35084100</p>
-                                    <a href="tel:+917935084100" class="info-link">Call →</a>
-                                </div>
-                            </div>
-                            <div class="info-card" data-parallax-depth="0.25">
-                                <div class="card-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="card-content">
-                                    <h3>Email</h3>
-                                    <p>sales@aameyapolymers.com</p>
-                                    <a href="mailto:sales@aameyapolymers.com" class="info-link">Email →</a>
-                                </div>
-                            </div>
-                            <div class="info-card" data-parallax-depth="0.3">
-                                <div class="card-icon">
-                                    <i class="fas fa-clock"></i>
-                                </div>
-                                <div class="card-content">
-                                    <h3>Hours</h3>
-                                    <p>Mon-Sat: 9AM - 6PM<br>Sun: Closed</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="map-container" data-parallax-depth="0.1">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.939666829574!2d72.51612731496813!3d23.030384984945795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84c8435245cf%3A0x5c47bf5bc3bd89c9!2sScience%20City%20Rd%2C%20Panchamrut%20Bunglows%20II%2C%20Sola%2C%20Ahmedabad%2C%20Gujarat%20380060!5e0!3m2!1sen!2sin!4v1625147433211!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
+    <!-- Product Hero Section -->
+    <section class="product-hero" data-scroll-section>
+        <div class="product-hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="product-hero-container">
+            <div class="product-hero-content" data-scroll data-scroll-speed="1">
+                <span class="section-tag">Our Products</span>
+                <h1>High-Quality Packaging Solutions</h1>
+                <p>Innovative, sustainable, and customizable packaging products for various industries</p>
+                <div class="hero-buttons">
+                    <a href="#product-categories" class="btn btn-primary">Explore Products</a>
+                    <a href="contact.html" class="btn btn-outline">Request Quote</a>
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="scroll-indicator" data-scroll data-scroll-speed="2" data-scroll-delay="0.1">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
-        <!-- Contact Form Section -->
-        <section class="contact-form-section">
-            <div class="container">
-                <div class="form-wrapper">
-                    <div class="form-header">
-                        <h2>Contact Us</h2>
-                    </div>
-                    <form id="contactForm" class="contact-form" action="mailto:enquiry@aameyapolymers.com" method="post"
-                        enctype="text/plain">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="contactName">Name <span class="required">*</span></label>
-                                <input type="text" id="contactName" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="contactEmail">Email <span class="required">*</span></label>
-                                <input type="email" id="contactEmail" name="email" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="contactMobile">Mobile <span class="required">*</span></label>
-                                <input type="tel" id="contactMobile" name="mobile" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="companyName">Company <span class="required">*</span></label>
-                                <input type="text" id="companyName" name="company" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="designation">Designation <span class="required">*</span></label>
-                                <input type="text" id="designation" name="designation" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="productCategory">Product <span class="required">*</span></label>
-                                <select id="productCategory" name="category" required>
-                                    <option value="">Select Category</option>
-                                    <option value="category1">Category 1</option>
-                                    <option value="category2">Category 2</option>
-                                    <option value="category3">Category 3</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="city">City <span class="required">*</span></label>
-                                <input type="text" id="city" name="city" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="pincode">PIN <span class="required">*</span></label>
-                                <input type="text" id="pincode" name="pincode" required maxlength="6">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="address">Address <span class="required">*</span></label>
-                            <textarea id="address" name="address" rows="2" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message <span class="required">*</span></label>
-                            <textarea id="message" name="message" rows="3" required></textarea>
-                        </div>
-                        <div class="form-submit">
-                            <button type="submit" class="btn btn-primary">
-                                <i class="fas fa-paper-plane"></i>
-                                Send
-                            </button>
-                        </div>
-                    </form>
+    <!-- Product Categories Section -->
+    <!-- Product Categories Section -->
+<section class="product-categories" id="product-categories" data-scroll-section>
+    <div class="container">
+        <div class="section-header" data-scroll data-scroll-speed="0.5">
+            <span class="section-tag">Categories</span>
+            <h2>Our Product Range</h2>
+            <p>Discover our comprehensive range of high-quality packaging solutions</p>
+        </div>
+
+        <div class="category-grid">
+            <div class="category-card" data-scroll data-scroll-speed="0.3">
+                <div class="category-image">
+                    <img src="assets/images/product/BOPP-Pinch-Bottom-Bags.png" alt="BOPP Pinch Bottom Bags">
+                </div>
+                <div class="category-content">
+                    <h3>BOPP Pinch Bottom Bags</h3>
+                    <p>Premium quality bags with excellent printability and barrier properties</p>
+                    <a href="#" class="category-link">View Details <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-        </section>
-    </main>
+
+            <div class="category-card" data-scroll data-scroll-speed="0.4">
+                <div class="category-image">
+                    <img src="assets/images/product/BOPP-Laminated-PP-Woven-Bags.jpg" alt="BOPP Laminated PP Woven Bags">
+                </div>
+                <div class="category-content">
+                    <h3>BOPP Laminated PP Woven Bags</h3>
+                    <p>Durable bags with superior strength and attractive printing options</p>
+                    <a href="#" class="category-link">View Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="category-card" data-scroll data-scroll-speed="0.5">
+                <div class="category-image">
+                    <img src="assets/images/product/Paper-Poly-Bags.jpg" alt="Paper / Poly Bags">
+                </div>
+                <div class="category-content">
+                    <h3>Paper / Poly Bags</h3>
+                    <p>Eco-friendly packaging solutions with customizable designs</p>
+                    <a href="#" class="category-link">View Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="category-card" data-scroll data-scroll-speed="0.6">
+                <div class="category-image">
+                    <img src="assets/images/product/Block-Bottom-OpenMouth-ValveBags.jpg" alt="Block Bottom Bags">
+                </div>
+                <div class="category-content">
+                    <h3>Block Bottom - Open Mouth & Valve Bags</h3>
+                    <p>Specialized industrial packaging with superior load-bearing capacity</p>
+                    <a href="#" class="category-link">View Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="category-card" data-scroll data-scroll-speed="0.7">
+                <div class="category-image">
+                    <img src="assets/images/product/PP-Woven-Bags.png" alt="PP Woven Bags">
+                </div>
+                <div class="category-content">
+                    <h3>PP Woven Bags</h3>
+                    <p>Heavy-duty bags with exceptional strength for industrial applications</p>
+                    <a href="#" class="category-link">View Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="category-card" data-scroll data-scroll-speed="0.8">
+                <div class="category-image">
+                    <img src="assets/images/product/PP-Woven-Fabrics.jpg" alt="PP Woven Fabrics">
+                </div>
+                <div class="category-content">
+                    <h3>PP Woven Fabrics</h3>
+                    <p>High-quality woven polypropylene fabrics for various packaging needs</p>
+                    <a href="#" class="category-link">View Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Footer Section -->
     <footer class="footer" data-scroll-section>
@@ -363,7 +333,18 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script src="assets/js/nav.js"></script>
+
+    <script>
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true,
+            multiplier: 1,
+            lerp: 0.05
+        });
+    </script>
 </body>
 
 </html>
