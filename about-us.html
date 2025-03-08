@@ -6,85 +6,213 @@
     <title>Aameya Polymers - About</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-pie.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assets/css/about-us.css">
 </head>
 <body data-scroll-container>
-    <nav class="navbar">
-        <div class="mobile-menu-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
-        
-        <div class="logo">
-            <img src="https://via.placeholder.com/150x50?text=Aameya+Polymers" alt="Aameya Polymers Logo">
-        </div>
-        
-        <div class="mobile-cart">
-            <i class="fas fa-shopping-cart"></i>
-        </div>
-
-        <div class="nav-container">
-            <div class="nav-links">
-                <div class="nav-item" data-scroll-to="#products">
-                    <span>SHOP NOW <i class="fas fa-chevron-down"></i></span>
+    <header class="header">
+        <div class="container">
+            <div class="row v-center">
+                <div class="header-item item-left">
+                    <div class="logo">
+                        <a href="#">logo</a>
+                    </div>
                 </div>
-                <div class="nav-item" data-scroll-to="#custom">
-                    <span>CUSTOM PACKAGING <i class="fas fa-chevron-down"></i></span>
+                <!-- menu start here -->
+                <div class="header-item item-center">
+                    <div class="menu-overlay"></div>
+                    <nav class="menu">
+                        <div class="mobile-menu-head">
+                            <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                            <div class="current-menu-title"></div>
+                            <div class="mobile-menu-close">&times;</div>
+                        </div>
+                        <ul class="menu-main">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Products <i class="fa fa-angle-down"></i></a>
+                                <div class="sub-menu mega-menu mega-menu-column-4">
+                                    <div class="list-item text-center">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <h4 class="title">Category 1</h4>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h4 class="title">Category 2</h4>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h4 class="title">Category 3</h4>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h4 class="title">Category 4</h4>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-item text-center">
+                                        <a href="#">
+                                            <img src="https://th.bing.com/th/id/R.ce8de1adaa3fcc169f0d97c436b8274b?rik=6W1qX6Qp03lNWg&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1504633273314-6a929fcd7090%3fixlib%3drb-0.3.5%26q%3d80%26fm%3djpg%26crop%3dentropy%26cs%3dtinysrgb%26w%3d1080%26fit%3dmax%26ixid%3deyJhcHBfaWQiOjEyMDd9%26s%3de8e0ff2cce3792a276fa84086113a17c&ehk=chx16tzqSRzpfA6BYM4FNaZZ%2fMJwEtxaqHPW1FZb9FI%3d&risl=&pid=ImgRaw&r=0"
+                                                alt="Fashion" />
+                                            <h4 class="title">Fashion</h4>
+                                        </a>
+                                    </div>
+                                    <div class="list-item text-center">
+                                        <a href="#">
+                                            <img src="https://img.freepik.com/free-photo/male-technician-repairing-computer-motherboard-wooden-desk_23-2147923493.jpg?w=740&t=st=1671765056~exp=1671765656~hmac=4c8dffc9558819b4c21b126aaa394150f48adc3be9c8004c0b65d0420709ec00"
+                                                alt="Electronics" />
+                                            <h4 class="title">Electronics</h4>
+                                        </a>
+                                    </div>
+                                    <div class="list-item text-center">
+                                        <a href="#">
+                                            <img src="https://images.unsplash.com/photo-1571380401583-72ca84994796?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                                                alt="Mobiles" />
+                                            <h4 class="title">Mobiles</h4>
+                                        </a>
+                                    </div>
+                                    <div class="list-item text-center">
+                                        <a href="#">
+                                            <img src="https://images.unsplash.com/photo-1578643463396-0997cb5328c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80"
+                                                alt="Appliances" />
+                                            <h4 class="title">Appliances</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="about-us.html">About <i class="fa fa-angle-down"></i></a>
+                                <div class="sub-menu mega-menu mega-menu-column-4">
+                                    <div class="list-item">
+                                        <h4 class="title">Men's Fashion</h4>
+                                        <ul>
+                                            <li><a href="#">T-Shirts</a></li>
+                                            <li><a href="#">Jeans</a></li>
+                                            <li><a href="#">Suit</a></li>
+                                            <li><a href="#">Kurta</a></li>
+                                            <li><a href="#">Watch</a></li>
+                                        </ul>
+                                        <h4 class="title">Beauty</h4>
+                                        <ul>
+                                            <li><a href="#">Moisturizer</a></li>
+                                            <li><a href="#">Face powder</a></li>
+                                            <li><a href="#">Lipstick</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-item">
+                                        <h4 class="title">Women's Fashion</h4>
+                                        <ul>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Sandals</a></li>
+                                            <li><a href="#">Watchs</a></li>
+                                            <li><a href="#">Shoes</a></li>
+                                        </ul>
+                                        <h4 class="title">Furniture</h4>
+                                        <ul>
+                                            <li><a href="#">Chairs</a></li>
+                                            <li><a href="#">Tables</a></li>
+                                            <li><a href="#">Doors</a></li>
+                                            <li><a href="#">Bed</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-item">
+                                        <h4 class="title">Home, Kitchen</h4>
+                                        <ul>
+                                            <li><a href="#">Kettle</a></li>
+                                            <li><a href="#">Toaster</a></li>
+                                            <li><a href="#">Dishwasher</a></li>
+                                            <li><a href="#">Microwave oven</a></li>
+                                            <li><a href="#">Pitcher</a></li>
+                                            <li><a href="#">Blender</a></li>
+                                            <li><a href="#">Colander</a></li>
+                                            <li><a href="#">Tureen</a></li>
+                                            <li><a href="#">Cookware</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-item">
+                                        <img src="https://images.unsplash.com/photo-1549497538-303791108f95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=761&q=80"
+                                            alt="Chair" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="blog.html">Blog <i class="fas fa-angle-down"></i></a>
+                                <div class="sub-menu single-column-menu">
+                                    <ul>
+                                        <li><a href="#">Blog Details</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Infrastructure</a>
+                                <!-- <div class="sub-menu single-column-menu">
+                                    <ul>
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Register</a></li>
+                                        <li><a href="#">Faq</a></li>
+                                        <li><a href="#">404 Page</a></li>
+                                    </ul>
+                                </div> -->
+                            </li>
+                            <li>
+                                <a href="#">CRS</a>
+                            </li>
+                            <li>
+                                <a href="career.html">Career</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="nav-item" data-scroll-to="#learn">
-                    <span>LEARN <i class="fas fa-chevron-down"></i></span>
-                </div>
-                <div class="nav-item" data-scroll-to="#about">
-                    <span>ABOUT US <i class="fas fa-chevron-down"></i></span>
+                <!-- menu end here -->
+                <div class="header-item item-right">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    <!-- mobile menu trigger -->
+                    <div class="mobile-menu-trigger">
+                        <span></span>
+                    </div>
                 </div>
             </div>
-            
-            <div class="right-nav">
-                <div class="nav-item">SEARCH</div>
-                <div class="nav-item">LOGIN</div>
-                <button class="cart-btn">CART</button>
-            </div>
         </div>
-    </nav>
+    </header>
+    <!-- header end -->
 
     <!-- About Hero Section -->
-    <section class="about-hero" data-scroll-section id="about-hero">
-        <div class="hero-background">
+    <section class="about-hero" data-scroll-section>
+        <div class="about-hero-bg">
             <div class="overlay"></div>
         </div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 data-scroll data-scroll-speed="1">BETTER PACKAGING FOR A BETTER WORLD</h1>
-                <p class="hero-subtitle" data-scroll data-scroll-speed="0.5">Innovative solutions for sustainable brands</p>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-item" data-scroll data-scroll-speed="0.8">
-                    <span class="stat-number">25+</span>
-                    <span class="stat-label">Years of Experience</span>
-                </div>
-                <div class="stat-item" data-scroll data-scroll-speed="0.6">
-                    <span class="stat-number">50+</span>
-                    <span class="stat-label">Countries Served</span>
-                </div>
-                <div class="stat-item" data-scroll data-scroll-speed="0.4">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Eco-Friendly</span>
-                </div>
-            </div>
-            <div class="hero-scroll-indicator" data-scroll data-scroll-speed="1.2">
-                <span>Scroll to explore</span>
-                <i class="fas fa-chevron-down"></i>
+        <div class="about-hero-container">
+            <div class="about-hero-content">
+                <span class="section-tag">About Us</span>
+                <h1>Shaping the Future of Sustainable Polymers</h1>
+                <p>With over two decades of expertise in polymer innovation, we're committed to developing sustainable solutions that meet tomorrow's challenges.</p>
             </div>
         </div>
     </section>
 
-<!-- about us section -->
+    <!-- about us section -->
 
     <section class="about-section" data-scroll-section>
         <div class="about-container">
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="assets/images/about-us.jpg" alt="Lincon Polymer Team">
+                    <img src="assets/images/about-page/about-us.jpg" alt="Lincon Polymer Team">
                 </div>
                 <div class="about-content">
                     <h2>ABOUT US</h2>
@@ -98,33 +226,231 @@
         </div>
     </section>
 
-    <!-- Deliveries Section -->
-<section class="deliveries-section" data-scroll-section>
-    <div class="deliveries-container">
-        <h2>OUR DELIVERIES</h2>
-        <div class="deliveries-grid">
-            <div class="delivery-item" data-scroll data-scroll-speed="0.8">
-                <span class="delivery-number" data-target="10000">0</span>
-                <span class="delivery-label">Tons of Packaging Delivered</span>
+        <!-- Video Section -->
+        <section class="video-section" data-scroll-section>
+            <div class="video-container">
+                <div class="video-content">
+                    <div class="video-text" data-scroll data-scroll-speed="0.2">
+                        <span class="video-tag">Our Story</span>
+                        <h2>Excellence in Polymer Innovation</h2>
+                        <p>Watch how we transform raw materials into sustainable packaging solutions that meet the evolving needs of industries worldwide.</p>
+                        <button class="play-btn" id="playVideo">
+                            <i class="fas fa-play"></i>
+                            <span>Watch Video</span>
+                        </button>
+                    </div>
+                    <div class="video-preview" data-scroll data-scroll-speed="0.1">
+                        <div class="video-thumbnail">
+                            <img src="assets/images/about-page/thumbnail.jpg" alt="Company Video Thumbnail">
+                            <div class="play-overlay">
+                                <div class="play-icon">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="delivery-item" data-scroll data-scroll-speed="0.6">
-                <span class="delivery-number" data-target="5000">0</span>
-                <span class="delivery-label">Satisfied Customers</span>
+            <!-- Video Modal -->
+            <div class="video-modal" id="videoModal">
+                <div class="modal-content">
+                    <button class="close-modal" id="closeModal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Company Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
-            <div class="delivery-item" data-scroll data-scroll-speed="0.4">
-                <span class="delivery-number" data-target="200">0</span>
-                <span class="delivery-label">Countries Served</span>
+        </section>
+
+            <!-- Industries Section -->
+    <section class="industries-section" data-scroll-section id="industries">
+        <div class="container">
+            <div class="section-title">
+                <h2>Industries We Serve</h2>
+                <p>Delivering innovative packaging solutions across diverse sectors</p>
             </div>
-            <div class="delivery-item" data-scroll data-scroll-speed="0.2">
-                <span class="delivery-number" data-target="150">0</span>
-                <span class="delivery-label">Innovative Solutions Developed</span>
+            <div class="industries-content">
+                <div class="industries-list">
+                    <ul>
+                        <li data-industry="0">E-commerce & Retail <span>35%</span></li>
+                        <li data-industry="1">Fashion & Apparel <span>25%</span></li>
+                        <li data-industry="2">Food & Beverage <span>20%</span></li>
+                        <li data-industry="3">Electronics <span>12%</span></li>
+                        <li data-industry="4">Others <span>8%</span></li>
+                    </ul>
+                </div>
+                <div class="chart-container">
+                    <canvas id="industryChart"></canvas>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-<script src="assets/js/about-us.js"></script>
-<script src="script.js"></script>
+    <!-- Delivery Stats Section -->
+    <section class="delivery-stats" data-scroll-section>
+        <div class="stats-container">
+            <div class="stats-header" data-scroll data-scroll-speed="0.1">
+                <span class="stats-tag">Our Impact</span>
+                <h2>Delivering Excellence</h2>
+                <div class="stats-divider"></div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card" data-scroll data-scroll-speed="0.2">
+                    <div class="stat-card-inner">
+                        <div class="stat-icon-wrap">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-target="15000">0</div>
+                            <div class="stat-label">Tons Delivered</div>
+                        </div>
+                        <svg class="stat-circle" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="stat-card" data-scroll data-scroll-speed="0.3">
+                    <div class="stat-card-inner">
+                        <div class="stat-icon-wrap">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-target="500">0</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <svg class="stat-circle" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="stat-card" data-scroll data-scroll-speed="0.4">
+                    <div class="stat-card-inner">
+                        <div class="stat-icon-wrap">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-target="25">0</div>
+                            <div class="stat-label">Countries Served</div>
+                        </div>
+                        <svg class="stat-circle" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="stat-card" data-scroll data-scroll-speed="0.5">
+                    <div class="stat-card-inner">
+                        <div class="stat-icon-wrap">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">Quality Certifications</div>
+                        </div>
+                        <svg class="stat-circle" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer" data-scroll-section>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Get in Touch</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91-79-35084100</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div class="email-group">
+                                <a href="mailto:sales@linconpolymers.com">sales@linconpolymers.com</a>
+                                <a href="mailto:exports@linconpolymers.com">exports@linconpolymers.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="address">
+                                <p>Lincon Polymers Pvt. Ltd.</p>
+                                <p>508-515, The Capital - 2</p>
+                                <p>Near Hetarth Party Plot</p>
+                                <p>Science City Road</p>
+                                <p>Ahmedabad - 380 060</p>
+                                <p>Gujarat - India</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#infrastructure">Infrastructure</a></li>
+                        <li><a href="#csr">CSR</a></li>
+                        <li><a href="#sustainability">Sustainability</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#career">Career</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#inquiry">Inquiry</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">BOPP Pinch Bottom Bags</a></li>
+                        <li><a href="#">BOPP Laminated PP Woven Bags</a></li>
+                        <li><a href="#">Paper / Poly Bags</a></li>
+                        <li><a href="#">Block Bottom - Open Mouth & Valve Bags</a></li>
+                        <li><a href="#">PP Woven Bags</a></li>
+                        <li><a href="#">PP Woven Fabrics</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.png" alt="Lincon Polymers Logo" />
+                    </div>
+                    <p class="footer-about">
+                        Leading manufacturer of PP woven & BOPP bags, committed to quality
+                        and innovation since 1996.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 Lincon Polymers Pvt. Ltd. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="assets/js/about-us.js"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/video-modal.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

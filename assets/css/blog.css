@@ -1,0 +1,215 @@
+:root {
+    --color-primary: #c02725;
+    --color-dark: #2B2A28;
+    --color-light: #FEFEFE;
+}
+
+/* Blog Hero Section */
+.blog-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/blog/blog.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--color-light);
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.blog-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, var(--color-dark) 0%, rgba(43, 42, 40, 0.4) 100%);
+    z-index: 1;
+}
+
+.blog-hero-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.blog-hero-content {
+    max-width: 800px;
+    margin-bottom: 60px;
+}
+
+.section-tag {
+    display: inline-block;
+    padding: 8px 16px;
+    background: var(--color-primary);
+    color: var(--color-light);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.blog-hero-content h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: var(--color-dark);
+}
+
+.blog-hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    max-width: 600px;
+    color: var(--color-dark);
+}
+
+.featured-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.featured-post {
+    background: var(--color-light);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(43, 42, 40, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.post-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.featured-post:hover .post-image img {
+    transform: scale(1.1);
+}
+
+.post-content {
+    padding: 25px;
+}
+
+.post-category {
+    display: inline-block;
+    padding: 6px 12px;
+    background: var(--color-primary);
+    color: var(--color-light);
+    border-radius: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.post-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    color: var(--color-dark);
+}
+
+.post-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 20px;
+    color: var(--color-dark);
+}
+
+.read-more {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: gap 0.3s ease;
+}
+
+.read-more:hover {
+    gap: 12px;
+}
+
+.read-more i {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .featured-posts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .blog-hero-content h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .featured-posts {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .post-image {
+        height: 200px;
+    }
+
+    .blog-hero {
+        padding: 80px 0;
+    }
+
+    .blog-hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .blog-hero-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .section-tag {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .post-content {
+        padding: 20px;
+    }
+
+    .post-content h3 {
+        font-size: 1.2rem;
+    }
+}

@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aameya Polymers</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
-    <!-- Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-    <!-- Swiper's JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="assets/css/fonts.css" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- AnyChart -->
-    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
-    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-pie.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers & Contact - Aameya Polymers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
-<body data-scroll-container>
+<body>
+    <!-- Header Section -->
     <header class="header">
         <div class="container">
             <div class="row v-center">
@@ -40,7 +33,7 @@
                         </div>
                         <ul class="menu-main">
                             <li>
-                                <a href="#">Home</a>
+                                <a href="index.html">Home</a>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="#">Products <i class="fa fa-angle-down"></i></a>
@@ -198,269 +191,140 @@
             </div>
         </div>
     </header>
-    <!-- header end -->
 
-    <!-- Hero Section with Video Background -->
-    <section class="hero" data-scroll-section id="hero">
-        <div class="video-container">
-            <video autoplay muted loop id="hero-video">
-                <source src="assets/videos/hero-bg.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-            <div class="overlay"></div>
-        </div>
-        <div class="hero-content">
-            <h1>WE'RE SENDING PLASTIC POLLUTION PACKING</h1>
-            <a href="#" class="cta-button">CHECK OUT THE POLLASTIC RANGE</a>
-        </div>
-    </section>
+    <main class="main-content">
 
-    <!-- Product Highlight Section with Changing Backgrounds -->
-    <section class="product-highlight" data-scroll-section id="custom">
-        <div class="highlight-container">
-            <div class="highlight-content">
-                <div class="background-slider">
-                    <div class="slide active"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                </div>
-                <div class="content-wrapper">
-                    <h2>ELEVATE YOUR BRAND WITH CUSTOM MAILERS</h2>
-                    <p>
-                        Make a lasting impression with quality branded mailing satchels
-                        that deliver on your environmental impact goals.
-                    </p>
-                    <a href="#" class="highlight-btn">TELL ME MORE</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Counter Section -->
-    <section class="counter-section" data-scroll-section id="about">
-        <div class="counter-container">
-            <h2>OUR IMPACT</h2>
-            <div class="counter-grid">
-                <div class="counter-item">
-                    <div class="counter-number" data-target="100">0</div>
-                    <div class="counter-symbol">%</div>
-                    <h3>QUALITY<br />GUARANTEED</h3>
-                </div>
-                <div class="counter-item">
-                    <div class="counter-number" data-target="95">0</div>
-                    <div class="counter-symbol">%</div>
-                    <h3>HIGHEST GRADE<br />CERTIFIED</h3>
-                </div>
-                <div class="counter-item">
-                    <div class="counter-number" data-target="500">0</div>
-                    <div class="counter-symbol">K+</div>
-                    <h3>SATISFIED<br />CUSTOMERS</h3>
-                </div>
-                <div class="counter-item">
-                    <div class="counter-number" data-target="100">0</div>
-                    <div class="counter-symbol">%</div>
-                    <h3>CARBON<br />NEUTRAL</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product Categories Section -->
-    <section class="categories-section" data-scroll-section id="products">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide category-item">
-                    <img src="assets/images/Mailer-collection-shot_5000x.jpg" alt="Mailers & Satchels" />
-                    <h3>MAILERS & SATCHELS</h3>
-                    <a href="#" class="category-link">View Range</a>
-                </div>
-                <div class="swiper-slide category-item">
-                    <img src="assets/images/revamp_Poly_Bags_5000x.jpg" alt="Garment Bags" />
-                    <h3>GARMENT BAGS</h3>
-                    <a href="#" class="category-link">View Range</a>
-                </div>
-                <div class="swiper-slide category-item">
-                    <img src="assets/images/revamp_Protection_cropped_5000x.png" alt="Extra Protection" />
-                    <h3>EXTRA PROTECTION</h3>
-                    <a href="#" class="category-link">View Range</a>
-                </div>
-                <div class="swiper-slide category-item">
-                    <img src="assets/images/revamp_Labels_cropped_5000x.png" alt="Labels & Tape" />
-                    <h3>LABELS & TAPE</h3>
-                    <a href="#" class="category-link">View Range</a>
-                </div>
-                <div class="swiper-slide category-item">
-                    <img src="assets/images/revamp_Labels_cropped_5000x.png" alt="Labels & Tape" />
-                    <h3>LABELS & TAPE</h3>
-                    <a href="#" class="category-link">View Range</a>
-                </div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-
-    <section class="about-section" data-scroll-section>
-        <div class="about-container">
-            <div class="about-grid">
-                <div class="about-image">
-                    <img src="assets/images/about-us.jpg" alt="Lincon Polymer Team" />
-                </div>
-                <div class="about-content">
-                    <h2>ABOUT US</h2>
-                    <div class="about-text">
-                        <p>
-                            Established in 1996 with a modest capacity of 500 metric tons
-                            per year, Lincon Polymer - a leading PP woven & BOPP bags
-                            manufacturer has achieved exceptional growth and success in just
-                            two decades with a customer-centric approach.
-                        </p>
-                        <p>
-                            Today, Lincon Polymer is the best polypropylene bags wholesaler,
-                            taking pride in its state-of-the-art manufacturing facility,
-                            covering an impressive 4,00,000 sq. ft. and boasting an
-                            installed capacity of 22,000 metric tons annually.
-                        </p>
-                        <a href="#" class="read-more-btn">Read More <span class="arrow">→</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Industries Section -->
-    <section class="industries-section" data-scroll-section id="industries">
-        <div class="container">
-            <div class="section-title">
-                <h2>Industries We Serve</h2>
-                <p>Delivering innovative packaging solutions across diverse sectors</p>
-            </div>
-            <div class="industries-content">
-                <div class="industries-list">
-                    <ul>
-                        <li data-industry="0">E-commerce & Retail <span>35%</span></li>
-                        <li data-industry="1">Fashion & Apparel <span>25%</span></li>
-                        <li data-industry="2">Food & Beverage <span>20%</span></li>
-                        <li data-industry="3">Electronics <span>12%</span></li>
-                        <li data-industry="4">Others <span>8%</span></li>
-                    </ul>
-                </div>
-                <div class="chart-container">
-                    <canvas id="industryChart"></canvas>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Partners Marquee Section -->
-    <section class="partners-section" data-scroll-section>
-        <div class="partners-container">
-            <h2>LEADING CHANGE WITH OUR PARTNERS</h2>
-            <div class="marquee">
-                <div class="marquee-content">
-                    <div class="marquee-item">
-                        <img src="assets/images/marque-logos/marque-logo.webp" alt="Maybelline" />
-                    </div>
-                    <div class="marquee-item">
-                        <img src="assets/images/marque-logos/marque-logo.webp" alt="Fila" />
-                    </div>
-                    <div class="marquee-item">
-                        <img src="assets/images/marque-logos/marque-logo.webp" alt="Diesel" />
-                    </div>
-                    <div class="marquee-item">
-                        <img src="assets/images/marque-logos/marque-logo.webp" alt="Billabong" />
-                    </div>
-                    <div class="marquee-item">
-                        <img src="assets/images/marque-logos/marque-logo.webp" alt="Volcom" />
-                    </div>
-                    <!-- Duplicate for seamless scrolling -->
-                    <div class="marquee-item">
-                        <img src="assets/images/marque-logos/marque-logo.webp" alt="Maybelline" />
-                    </div>
-                    <div class="marquee-item">
-                        <img src="assets/images/marque-logos/marque-logo.webp" alt="Fila" />
-                    </div>
-                    <div class="marquee-item">
-                        <img src="assets/images/marque-logos/marque-logo.webp" alt="Diesel" />
-                    </div>
-                    <div class="marquee-item">
-                        <img src="assets/images/marque-logos/marque-logo.webp" alt="Billabong" />
-                    </div>
-                    <div class="marquee-item">
-                        <img src="assets/images/marque-logos/marque-logo.webp" alt="Volcom" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials-section" data-scroll-section>
-        <div class="testimonials-container">
-            <h2>What Our Clients Say</h2>
-            <div class="testimonials-slider">
-                <div class="testimonial-track">
-                    <div class="testimonial-item">
-                        <div class="testimonial-content">
-                            <div class="quote-icon">❝</div>
-                            <p class="testimonial-text">
-                                Working with Lincon Polymer has been exceptional. Their
-                                commitment to quality and timely delivery has made them our
-                                trusted partner for all packaging needs.
-                            </p>
-                            <div class="testimonial-author">
-                                <img src="assets/images/profile.jpg" alt="Client" />
-                                <div class="author-info">
-                                    <h4>John Smith</h4>
-                                    <p>CEO, Fashion Brands Co.</p>
+        <!-- Contact Info Section -->
+        <section class="contact-info-section parallax-section">
+            <div class="container">
+                <div class="contact-info-grid">
+                    <div class="contact-info-content">
+                        <div class="section-header" data-parallax-depth="0.1">
+                            <h2>Get in Touch</h2>
+                            <p>Visit us or reach out</p>
+                        </div>
+                        <div class="info-cards">
+                            <div class="info-card" data-parallax-depth="0.15">
+                                <div class="card-icon">
+                                    <i class="fas fa-map-marked-alt"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Office</h3>
+                                    <p>508-515, The Capital - 2, Science City Road<br>
+                                    Ahmedabad - 380060, Gujarat</p>
+                                </div>
+                            </div>
+                            <div class="info-card" data-parallax-depth="0.2">
+                                <div class="card-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Phone</h3>
+                                    <p>+91-79-35084100</p>
+                                    <a href="tel:+917935084100" class="info-link">Call →</a>
+                                </div>
+                            </div>
+                            <div class="info-card" data-parallax-depth="0.25">
+                                <div class="card-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Email</h3>
+                                    <p>sales@aameyapolymers.com</p>
+                                    <a href="mailto:sales@aameyapolymers.com" class="info-link">Email →</a>
+                                </div>
+                            </div>
+                            <div class="info-card" data-parallax-depth="0.3">
+                                <div class="card-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Hours</h3>
+                                    <p>Mon-Sat: 9AM - 6PM<br>Sun: Closed</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-content">
-                            <div class="quote-icon">❝</div>
-                            <p class="testimonial-text">
-                                The quality of their PP woven bags is outstanding. Their
-                                innovative solutions have helped us reduce costs while
-                                maintaining premium quality.
-                            </p>
-                            <div class="testimonial-author">
-                                <img src="assets/images/profile.jpg" alt="Client" />
-                                <div class="author-info">
-                                    <h4>Sarah Johnson</h4>
-                                    <p>Operations Director, Retail Solutions</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="map-container" data-parallax-depth="0.1">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.939666829574!2d72.51612731496813!3d23.030384984945795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84c8435245cf%3A0x5c47bf5bc3bd89c9!2sScience%20City%20Rd%2C%20Panchamrut%20Bunglows%20II%2C%20Sola%2C%20Ahmedabad%2C%20Gujarat%20380060!5e0!3m2!1sen!2sin!4v1625147433211!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-content">
-                            <div class="quote-icon">❝</div>
-                            <p class="testimonial-text">
-                                Their customer service is impeccable. They understand our
-                                requirements perfectly and always deliver beyond expectations.
-                            </p>
-                            <div class="testimonial-author">
-                                <img src="assets/images/profile.jpg" alt="Client" />
-                                <div class="author-info">
-                                    <h4>Michael Chen</h4>
-                                    <p>Procurement Manager, Global Trade Ltd</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-controls">
-                    <button class="prev-btn" aria-label="Previous testimonial">
-                        ←
-                    </button>
-                    <div class="testimonial-dots"></div>
-                    <button class="next-btn" aria-label="Next testimonial">→</button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="form-wrapper">
+                    <div class="form-header">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <form id="contactForm" class="contact-form" action="mailto:enquiry@aameyapolymers.com" method="post"
+                        enctype="text/plain">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Name <span class="required">*</span></label>
+                                <input type="text" id="contactName" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email <span class="required">*</span></label>
+                                <input type="email" id="contactEmail" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactMobile">Mobile <span class="required">*</span></label>
+                                <input type="tel" id="contactMobile" name="mobile" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="companyName">Company <span class="required">*</span></label>
+                                <input type="text" id="companyName" name="company" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="designation">Designation <span class="required">*</span></label>
+                                <input type="text" id="designation" name="designation" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="productCategory">Product <span class="required">*</span></label>
+                                <select id="productCategory" name="category" required>
+                                    <option value="">Select Category</option>
+                                    <option value="category1">Category 1</option>
+                                    <option value="category2">Category 2</option>
+                                    <option value="category3">Category 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City <span class="required">*</span></label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pincode">PIN <span class="required">*</span></label>
+                                <input type="text" id="pincode" name="pincode" required maxlength="6">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address <span class="required">*</span></label>
+                            <textarea id="address" name="address" rows="2" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="3" required></textarea>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Send
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer Section -->
     <footer class="footer" data-scroll-section>
@@ -550,12 +414,7 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-    <script src="script.js"></script>
-    <script src="assets/js/swiper.js"></script>
     <script src="assets/js/nav.js"></script>
-    <script src="assets/js/chart.js"></script>
 </body>
 
 </html>

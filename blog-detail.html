@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sustainable Packaging Solutions - Aameya Polymers Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/blog-detail.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- AnyChart -->
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-pie.min.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="row v-center">
+                <div class="header-item item-left">
+                    <div class="logo">
+                        <a href="#">logo</a>
+                    </div>
+                </div>
+                <!-- menu start here -->
+                <div class="header-item item-center">
+                    <div class="menu-overlay"></div>
+                    <nav class="menu">
+                        <div class="mobile-menu-head">
+                            <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                            <div class="current-menu-title"></div>
+                            <div class="mobile-menu-close">&times;</div>
+                        </div>
+                        <ul class="menu-main">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Products <i class="fa fa-angle-down"></i></a>
+                                <div class="sub-menu mega-menu mega-menu-column-4">
+                                    <div class="list-item text-center">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <h4 class="title">Category 1</h4>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h4 class="title">Category 2</h4>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h4 class="title">Category 3</h4>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h4 class="title">Category 4</h4>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-item text-center">
+                                        <a href="#">
+                                            <img src="https://th.bing.com/th/id/R.ce8de1adaa3fcc169f0d97c436b8274b?rik=6W1qX6Qp03lNWg&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1504633273314-6a929fcd7090%3fixlib%3drb-0.3.5%26q%3d80%26fm%3djpg%26crop%3dentropy%26cs%3dtinysrgb%26w%3d1080%26fit%3dmax%26ixid%3deyJhcHBfaWQiOjEyMDd9%26s%3de8e0ff2cce3792a276fa84086113a17c&ehk=chx16tzqSRzpfA6BYM4FNaZZ%2fMJwEtxaqHPW1FZb9FI%3d&risl=&pid=ImgRaw&r=0"
+                                                alt="Fashion" />
+                                            <h4 class="title">Fashion</h4>
+                                        </a>
+                                    </div>
+                                    <div class="list-item text-center">
+                                        <a href="#">
+                                            <img src="https://img.freepik.com/free-photo/male-technician-repairing-computer-motherboard-wooden-desk_23-2147923493.jpg?w=740&t=st=1671765056~exp=1671765656~hmac=4c8dffc9558819b4c21b126aaa394150f48adc3be9c8004c0b65d0420709ec00"
+                                                alt="Electronics" />
+                                            <h4 class="title">Electronics</h4>
+                                        </a>
+                                    </div>
+                                    <div class="list-item text-center">
+                                        <a href="#">
+                                            <img src="https://images.unsplash.com/photo-1571380401583-72ca84994796?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                                                alt="Mobiles" />
+                                            <h4 class="title">Mobiles</h4>
+                                        </a>
+                                    </div>
+                                    <div class="list-item text-center">
+                                        <a href="#">
+                                            <img src="https://images.unsplash.com/photo-1578643463396-0997cb5328c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80"
+                                                alt="Appliances" />
+                                            <h4 class="title">Appliances</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="about-us.html">About <i class="fa fa-angle-down"></i></a>
+                                <div class="sub-menu mega-menu mega-menu-column-4">
+                                    <div class="list-item">
+                                        <h4 class="title">Men's Fashion</h4>
+                                        <ul>
+                                            <li><a href="#">T-Shirts</a></li>
+                                            <li><a href="#">Jeans</a></li>
+                                            <li><a href="#">Suit</a></li>
+                                            <li><a href="#">Kurta</a></li>
+                                            <li><a href="#">Watch</a></li>
+                                        </ul>
+                                        <h4 class="title">Beauty</h4>
+                                        <ul>
+                                            <li><a href="#">Moisturizer</a></li>
+                                            <li><a href="#">Face powder</a></li>
+                                            <li><a href="#">Lipstick</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-item">
+                                        <h4 class="title">Women's Fashion</h4>
+                                        <ul>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Sandals</a></li>
+                                            <li><a href="#">Watchs</a></li>
+                                            <li><a href="#">Shoes</a></li>
+                                        </ul>
+                                        <h4 class="title">Furniture</h4>
+                                        <ul>
+                                            <li><a href="#">Chairs</a></li>
+                                            <li><a href="#">Tables</a></li>
+                                            <li><a href="#">Doors</a></li>
+                                            <li><a href="#">Bed</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-item">
+                                        <h4 class="title">Home, Kitchen</h4>
+                                        <ul>
+                                            <li><a href="#">Kettle</a></li>
+                                            <li><a href="#">Toaster</a></li>
+                                            <li><a href="#">Dishwasher</a></li>
+                                            <li><a href="#">Microwave oven</a></li>
+                                            <li><a href="#">Pitcher</a></li>
+                                            <li><a href="#">Blender</a></li>
+                                            <li><a href="#">Colander</a></li>
+                                            <li><a href="#">Tureen</a></li>
+                                            <li><a href="#">Cookware</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-item">
+                                        <img src="https://images.unsplash.com/photo-1549497538-303791108f95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=761&q=80"
+                                            alt="Chair" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="blog.html">Blog <i class="fas fa-angle-down"></i></a>
+                                <div class="sub-menu single-column-menu">
+                                    <ul>
+                                        <li><a href="#">Blog Details</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Infrastructure</a>
+                                <!-- <div class="sub-menu single-column-menu">
+                                    <ul>
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Register</a></li>
+                                        <li><a href="#">Faq</a></li>
+                                        <li><a href="#">404 Page</a></li>
+                                    </ul>
+                                </div> -->
+                            </li>
+                            <li>
+                                <a href="#">CRS</a>
+                            </li>
+                            <li>
+                                <a href="career.html">Career</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- menu end here -->
+                <div class="header-item item-right">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    <!-- mobile menu trigger -->
+                    <div class="mobile-menu-trigger">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- Blog Detail Hero Section -->
+    <section class="blog-detail-hero animate-on-scroll" style="background-image: url('assets/images/blog/sustainable-packaging.jpg')">
+        <div class="blog-detail-overlay"></div>
+        <div class="blog-detail-container">
+            <span class="section-tag animate-on-scroll" >Sustainability</span>
+            <h1 class="animate-on-scroll">The Future of Sustainable Packaging: Innovations and Trends</h1>
+            <div class="blog-meta animate-on-scroll">
+                <span><i class="far fa-calendar"></i> March 6, 2025</span>
+                <span><i class="far fa-user"></i> By John Smith</span>
+                <span><i class="far fa-clock"></i> 8 min read</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content Section -->
+    <section class="blog-content-section">
+        <div class="blog-content-container">
+            <div class="blog-content">
+                <p class="animate-on-scroll">The packaging industry is undergoing a revolutionary transformation as sustainability becomes a primary focus for businesses and consumers alike. In this comprehensive guide, we'll explore the latest innovations and trends shaping the future of sustainable packaging.</p>
+
+                <h2 class="animate-on-scroll">The Rise of Eco-Friendly Materials</h2>
+                <p class="animate-on-scroll">As environmental consciousness grows, manufacturers are increasingly turning to biodegradable and recyclable materials. From plant-based plastics to mushroom packaging, the industry is witnessing a surge in innovative alternatives to traditional packaging materials.</p>
+
+                <div class="blog-image animate-on-scroll">
+                    <img src="assets/images/blog/eco-materials.jpg" alt="Eco-friendly packaging materials">
+                </div>
+
+                <h2 class="animate-on-scroll">Smart Packaging Technologies</h2>
+                <p class="animate-on-scroll">The integration of smart technologies in packaging is revolutionizing how we track, preserve, and interact with products. These innovations not only enhance the user experience but also contribute to reducing waste and improving sustainability.</p>
+
+                <div class="blog-quote animate-on-scroll">
+                    "The future of packaging lies in the perfect balance between sustainability, functionality, and innovation. It's not just about being eco-friendly; it's about creating intelligent solutions that benefit both consumers and the environment."
+                </div>
+
+                <h3 class="animate-on-scroll">Key Benefits of Sustainable Packaging</h3>
+                <ul class="animate-on-scroll">
+                    <li>Reduced environmental impact</li>
+                    <li>Lower carbon footprint</li>
+                    <li>Enhanced brand reputation</li>
+                    <li>Cost-effective in the long run</li>
+                    <li>Improved customer satisfaction</li>
+                </ul>
+
+                <p class="animate-on-scroll">The journey towards sustainable packaging is ongoing, and it requires collaboration between manufacturers, designers, and consumers. By embracing these innovations, we can create a more sustainable future for generations to come.</p>
+
+                <div class="blog-tags animate-on-scroll">
+                    <a href="#" class="blog-tag">Sustainability</a>
+                    <a href="#" class="blog-tag">Innovation</a>
+                    <a href="#" class="blog-tag">Eco-Friendly</a>
+                    <a href="#" class="blog-tag">Packaging</a>
+                </div>
+            </div>
+
+            <!-- Author Section -->
+            <div class="author-section animate-on-scroll">
+                <div class="author-container">
+                    <div class="author-image">
+                        <img src="assets/images/team/john-smith.jpg" alt="John Smith">
+                    </div>
+                    <div class="author-info">
+                        <h3>John Smith</h3>
+                        <p>Sustainability Expert at Aameya Polymers with over 15 years of experience in packaging innovation. Passionate about creating eco-friendly solutions for a better tomorrow.</p>
+                        <div class="author-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-medium"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Posts -->
+            <div class="related-posts animate-on-scroll">
+                <h2>Related Articles</h2>
+                <div class="related-posts-grid">
+                    <article class="related-post animate-on-scroll">
+                        <div class="related-post-image">
+                            <img src="assets/images/blog/recycling-tips.jpg" alt="Recycling Tips">
+                        </div>
+                        <div class="related-post-content">
+                            <h3>Essential Recycling Tips for Businesses</h3>
+                            <p>Learn how to implement effective recycling practices in your business operations.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="related-post animate-on-scroll">
+                        <div class="related-post-image">
+                            <img src="assets/images/blog/biodegradable.jpg" alt="Biodegradable Packaging">
+                        </div>
+                        <div class="related-post-content">
+                            <h3>The Rise of Biodegradable Packaging</h3>
+                            <p>Discover how biodegradable materials are transforming the packaging industry.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="related-post animate-on-scroll">
+                        <div class="related-post-image">
+                            <img src="assets/images/blog/future-trends.jpg" alt="Future Trends">
+                        </div>
+                        <div class="related-post-content">
+                            <h3>2025 Packaging Industry Trends</h3>
+                            <p>Stay ahead of the curve with these emerging packaging industry trends.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/nav.js"></script>
+    <script>
+        // Enhanced intersection observer for smoother animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: [0, 0.2, 0.4, 0.6, 0.8, 1]
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.intersectionRatio > 0) {
+                    entry.target.classList.add('visible');
+                    
+                    // Progressive animation based on visibility ratio
+                    if (entry.target.classList.contains('blog-detail-hero')) {
+                        const ratio = entry.intersectionRatio;
+                        entry.target.style.opacity = Math.min(ratio * 1.5, 1);
+                        entry.target.style.transform = `translateY(${20 * (1 - ratio)}px)`;
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => observer.observe(el));
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
