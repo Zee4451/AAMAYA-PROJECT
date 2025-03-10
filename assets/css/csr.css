@@ -1,0 +1,750 @@
+/* CSR Hero Section */
+.csr-hero {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.csr-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/csr/csr.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    transform: scale(1.1);
+    transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.csr-hero.is-inview .csr-hero-bg {
+    transform: scale(1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4));
+    z-index: 2;
+}
+
+.csr-hero .container {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.csr-hero-content {
+    max-width: 700px;
+    color: #ffffff;
+}
+
+.section-tag {
+    display: inline-block;
+    background-color: rgba(234, 70, 54, 0.2);
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 24px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.csr-hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.csr-hero-content p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+}
+
+.csr-hero-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #ea4636;
+    color: #ffffff;
+    border: 2px solid #ea4636;
+}
+
+.btn-primary:hover {
+    background-color: #d03a2b;
+    border-color: #d03a2b;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(234, 70, 54, 0.3);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.btn-outline:hover {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* CSR Mission Section */
+.csr-mission {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.mission-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.mission-content {
+    flex: 1;
+}
+
+.mission-content h2 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.mission-content > p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.mission-values {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mission-value-item {
+    display: flex;
+    gap: 20px;
+}
+
+.value-icon {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(234, 70, 54, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.value-icon i {
+    font-size: 24px;
+    color: #ea4636;
+}
+
+.value-content h3 {
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.value-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+}
+
+.mission-image {
+    flex: 1;
+    position: relative;
+}
+
+.mission-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.mission-stats {
+    position: absolute;
+    bottom: -30px;
+    left: 30px;
+    right: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ea4636;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .csr-hero-content h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .mission-wrapper {
+        flex-direction: column;
+    }
+    
+    .mission-image {
+        order: -1;
+        margin-bottom: 60px;
+    }
+    
+    .mission-stats {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        margin-top: -30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .csr-hero {
+        min-height: 70vh;
+    }
+    
+    .csr-hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .csr-hero-content p {
+        font-size: 1.1rem;
+    }
+    
+    .mission-content h2 {
+        font-size: 2rem;
+    }
+    
+    .csr-mission {
+        padding: 70px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .csr-hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .csr-hero-content p {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .csr-hero-buttons {
+        flex-direction: column;
+    }
+    
+    .mission-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .csr-mission {
+        padding: 50px 0;
+    }
+}
+
+/* CSR Policy Document Section */
+.csr-policy-section {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.csr-policy-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(234, 70, 54, 0.05), transparent 70%);
+    z-index: 1;
+}
+
+.csr-policy-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.policy-document {
+    max-width: 900px;
+    margin: 50px auto 0;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.policy-header {
+    background-color: #f5f5f5;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.policy-logo {
+    width: 120px;
+    margin: 0 auto 20px;
+}
+
+.policy-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.policy-header h3 {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.policy-date {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.policy-section {
+    padding: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.policy-section:last-child {
+    border-bottom: none;
+}
+
+.policy-section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(234, 70, 54, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.section-icon i {
+    font-size: 20px;
+    color: #ea4636;
+}
+
+.policy-section-header h4 {
+    font-size: 1.4rem;
+    color: #1a1a1a;
+    margin: 0;
+    font-weight: 500;
+}
+
+.policy-content {
+    padding-left: 65px;
+}
+
+.policy-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.policy-content ol, 
+.policy-content ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.policy-content li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.focus-area {
+    margin-bottom: 25px;
+}
+
+.focus-area:last-child {
+    margin-bottom: 0;
+}
+
+.focus-area h5 {
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.implementation-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.implementation-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+
+.implementation-list li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    background-color: #ea4636;
+    border-radius: 50%;
+}
+
+.policy-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #e0e0e0;
+}
+
+.policy-signature p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.signatory {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 5px 0 !important;
+}
+
+.btn-outline-dark {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .csr-policy-section {
+        padding: 80px 0;
+    }
+    
+    .policy-header h3 {
+        font-size: 1.6rem;
+    }
+    
+    .policy-section-header h4 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .csr-policy-section {
+        padding: 60px 0;
+    }
+    
+    .policy-section {
+        padding: 25px;
+    }
+    
+    .policy-content {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    
+    .policy-section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .section-icon {
+        margin-bottom: 15px;
+    }
+    
+    .policy-footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .csr-policy-section {
+        padding: 50px 0;
+    }
+    
+    .policy-header h3 {
+        font-size: 1.4rem;
+    }
+    
+    .policy-section {
+        padding: 20px;
+    }
+    
+    .policy-section-header h4 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Existing CSS styles... */
+
+/* Certification of Honor Section */
+.certification-section {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+}
+
+.certification-container {
+    max-width: 800px;
+    margin: 60px auto 0;
+}
+
+.certification-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.certification-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.certification-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.certification-card:hover .certification-image img {
+    transform: scale(1.05);
+}
+
+.certification-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    background-color: #ea4636;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+    box-shadow: 0 5px 15px rgba(234, 70, 54, 0.3);
+}
+
+.certification-content {
+    padding: 30px;
+}
+
+.certification-content h3 {
+    font-size: 1.6rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.certification-issuer {
+    color: #ea4636;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.certification-year {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.certification-description {
+    color: #666;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.certification-footer {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.btn-text {
+    color: #ea4636;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.btn-text i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.btn-text:hover {
+    color: #c83a2a;
+}
+
+.btn-text:hover i {
+    transform: translateX(5px);
+}
+
+.certification-cta {
+    margin-top: 70px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.cta-content h3 {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.cta-content p {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 600px;
+}
+
+/* Responsive styles for certification section */
+@media (max-width: 992px) {
+    .certification-cta {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cta-content {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .certification-section {
+        padding: 70px 0;
+    }
+    
+    .certification-container {
+        padding: 0 20px;
+    }
+    
+    .certification-content h3 {
+        font-size: 1.4rem;
+    }
+    
+    .certification-description {
+        font-size: 1rem;
+    }
+}
