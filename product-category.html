@@ -38,58 +38,120 @@
                                 <a href="index.html">Home</a>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="product-category.html">Products <i class="fa fa-angle-down"></i></a>
+                                <a href="product-category.html" class="menu-link">Products <i class="fa fa-angle-down" onclick="toggleDropdown(event)"></i></a>
                                 <div class="sub-menu mega-menu mega-menu-column-4">
-                                    <div class="list-item text-center">
-                                        <ul>
-                                            <li>
+                                    <!-- Categories Column -->
+                                    <div class="list-item category-list">
+                                        <h3 class="menu-title">Product Categories</h3>
+                                        <ul class="category-menu">
+                                            <li class="category-item">
                                                 <a href="#">
-                                                    <h4 class="title">Category 1</h4>
+                                                    <div class="category-icon">
+                                                        <i class="fas fa-box"></i>
+                                                    </div>
+                                                    <div class="category-info">
+                                                        <h4 class="title">BOPP Bags</h4>
+                                                        <span class="category-desc">Premium packaging</span>
+                                                    </div>
+                                                    <div class="category-arrow">
+                                                        <i class="fas fa-chevron-right"></i>
+                                                    </div>
                                                 </a>
                                             </li>
-                                            <li>
+                                            <li class="category-item">
                                                 <a href="#">
-                                                    <h4 class="title">Category 2</h4>
+                                                    <div class="category-icon">
+                                                        <i class="fas fa-shopping-bag"></i>
+                                                    </div>
+                                                    <div class="category-info">
+                                                        <h4 class="title">PP Woven Bags</h4>
+                                                        <span class="category-desc">Durable & strong</span>
+                                                    </div>
+                                                    <div class="category-arrow">
+                                                        <i class="fas fa-chevron-right"></i>
+                                                    </div>
                                                 </a>
                                             </li>
-                                            <li>
+                                            <li class="category-item">
                                                 <a href="#">
-                                                    <h4 class="title">Category 3</h4>
+                                                    <div class="category-icon">
+                                                        <i class="fas fa-leaf"></i>
+                                                    </div>
+                                                    <div class="category-info">
+                                                        <h4 class="title">Paper Bags</h4>
+                                                        <span class="category-desc">Eco-friendly</span>
+                                                    </div>
+                                                    <div class="category-arrow">
+                                                        <i class="fas fa-chevron-right"></i>
+                                                    </div>
                                                 </a>
                                             </li>
-                                            <li>
+                                            <li class="category-item">
                                                 <a href="#">
-                                                    <h4 class="title">Category 4</h4>
+                                                    <div class="category-icon">
+                                                        <i class="fas fa-industry"></i>
+                                                    </div>
+                                                    <div class="category-info">
+                                                        <h4 class="title">Industrial Packaging</h4>
+                                                        <span class="category-desc">Heavy-duty options</span>
+                                                    </div>
+                                                    <div class="category-arrow">
+                                                        <i class="fas fa-chevron-right"></i>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="view-all">
+                                                <a href="product-category.html">
+                                                    <span>View All Categories</span>
+                                                    <i class="fas fa-arrow-right"></i>
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="list-item text-center">
+                                    
+                                    <!-- Featured Products Columns -->
+                                    <div class="list-item featured-item">
                                         <a href="#">
-                                            <img src="https://th.bing.com/th/id/R.ce8de1adaa3fcc169f0d97c436b8274b?rik=6W1qX6Qp03lNWg&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1504633273314-6a929fcd7090%3fixlib%3drb-0.3.5%26q%3d80%26fm%3djpg%26crop%3dentropy%26cs%3dtinysrgb%26w%3d1080%26fit%3dmax%26ixid%3deyJhcHBfaWQiOjEyMDd9%26s%3de8e0ff2cce3792a276fa84086113a17c&ehk=chx16tzqSRzpfA6BYM4FNaZZ%2fMJwEtxaqHPW1FZb9FI%3d&risl=&pid=ImgRaw&r=0"
-                                                alt="Fashion" />
-                                            <h4 class="title">Fashion</h4>
+                                            <div class="featured-image">
+                                                <img src="https://th.bing.com/th/id/R.ce8de1adaa3fcc169f0d97c436b8274b?rik=6W1qX6Qp03lNWg&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1504633273314-6a929fcd7090%3fixlib%3drb-0.3.5%26q%3d80%26fm%3djpg%26crop%3dentropy%26cs%3dtinysrgb%26w%3d1080%26fit%3dmax%26ixid%3deyJhcHBfaWQiOjEyMDd9%26s%3de8e0ff2cce3792a276fa84086113a17c&ehk=chx16tzqSRzpfA6BYM4FNaZZ%2fMJwEtxaqHPW1FZb9FI%3d&risl=&pid=ImgRaw&r=0" alt="Fashion" />
+                                                <div class="featured-overlay">
+                                                    <span class="featured-tag">Popular</span>
+                                                </div>
+                                            </div>
+                                            <div class="featured-content">
+                                                <h4 class="title">Fashion Packaging</h4>
+                                                <p class="featured-desc">Stylish solutions for clothing brands</p>
+                                            </div>
                                         </a>
                                     </div>
-                                    <div class="list-item text-center">
+                                    
+                                    <div class="list-item featured-item">
                                         <a href="#">
-                                            <img src="https://img.freepik.com/free-photo/male-technician-repairing-computer-motherboard-wooden-desk_23-2147923493.jpg?w=740&t=st=1671765056~exp=1671765656~hmac=4c8dffc9558819b4c21b126aaa394150f48adc3be9c8004c0b65d0420709ec00"
-                                                alt="Electronics" />
-                                            <h4 class="title">Electronics</h4>
+                                            <div class="featured-image">
+                                                <img src="https://img.freepik.com/free-photo/male-technician-repairing-computer-motherboard-wooden-desk_23-2147923493.jpg?w=740&t=st=1671765056~exp=1671765656~hmac=4c8dffc9558819b4c21b126aaa394150f48adc3be9c8004c0b65d0420709ec00" alt="Electronics" />
+                                                <div class="featured-overlay">
+                                                    <span class="featured-tag">New</span>
+                                                </div>
+                                            </div>
+                                            <div class="featured-content">
+                                                <h4 class="title">Electronics Packaging</h4>
+                                                <p class="featured-desc">Protective solutions for devices</p>
+                                            </div>
                                         </a>
                                     </div>
-                                    <div class="list-item text-center">
+                                    
+                                    <div class="list-item featured-item">
                                         <a href="#">
-                                            <img src="https://images.unsplash.com/photo-1571380401583-72ca84994796?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-                                                alt="Mobiles" />
-                                            <h4 class="title">Mobiles</h4>
-                                        </a>
-                                    </div>
-                                    <div class="list-item text-center">
-                                        <a href="#">
-                                            <img src="https://images.unsplash.com/photo-1578643463396-0997cb5328c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80"
-                                                alt="Appliances" />
-                                            <h4 class="title">Appliances</h4>
+                                            <div class="featured-image">
+                                                <img src="https://images.unsplash.com/photo-1571380401583-72ca84994796?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="Mobiles" />
+                                                <div class="featured-overlay">
+                                                    <span class="featured-tag">Featured</span>
+                                                </div>
+                                            </div>
+                                            <div class="featured-content">
+                                                <h4 class="title">Mobile Accessories</h4>
+                                                <p class="featured-desc">Custom packaging for accessories</p>
+                                            </div>
                                         </a>
                                     </div>
                                 </div>
@@ -118,7 +180,7 @@
                                 </div> -->
                             </li>
                             <li>
-                                <a href="#">CRS</a>
+                                <a href="CSR">CSR</a>
                             </li>
                             <li>
                                 <a href="career.html">Career</a>
