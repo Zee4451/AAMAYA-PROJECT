@@ -709,3 +709,107 @@ html, body {
 }
 
 
+/* Job Vacancies Section */
+.job-vacancies-section {
+    padding-top: 80px;
+    padding-bottom: 0px;
+    background-color: #f9f9f9;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.vacancies-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.vacancy-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.vacancy-title {
+    flex: 1;
+}
+
+.vacancy-title h3 {
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+}
+
+.vacancy-location {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.vacancy-info {
+    display: flex;
+    gap: 20px;
+}
+
+.vacancy-info span {
+    color: #666;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.vacancy-info i {
+    color: #ea4636;
+}
+
+.btn-apply {
+    background-color: #ea4636;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-apply:hover {
+    background-color: #d03a2b;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .vacancy-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .vacancy-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-apply {
+        width: 100%;
+        text-align: center;
+    }
+}
