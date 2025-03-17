@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aameya Polymers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Swiper's JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/privacy-policy.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- AnyChart -->
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-pie.min.js"></script>
+</head>
+
+<body data-scroll-container>
+    <header class="header">
+        <div class="container">
+            <div class="row v-center">
+                <div class="header-item item-left">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./assets/images/Aameya Logo.png" height="55" width="100" alt="Aameya Polymers Logo">
+                        </a>                    
+                    </div>
+                </div>
+                <!-- menu start here -->
+                <div class="header-item item-center">
+                    <div class="menu-overlay"></div>
+                    <nav class="menu">
+                        <div class="mobile-menu-head">
+                            <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                            <div class="current-menu-title"></div>
+                            <div class="mobile-menu-close">&times;</div>
+                        </div>
+                        <ul class="menu-main">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a> All Products <i class="fa fa-angle-down"></i></a>
+                                <div class="sub-menu mega-menu mega-menu-column-4">
+                                    <div class="list-item text-center">
+                                        <ul>
+                                            <li>
+                                                <a href="product-category.html">
+                                                    <h4 class="title text-center">Product</h4>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h4 class="title text-center">Category 1</h4>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h4 class="title">Category 2</h4>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h4 class="title">Category 3</h4>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h4 class="title">Category 4</h4>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-item text-center">
+                                        <a href="#">
+                                            <img src="https://th.bing.com/th/id/R.ce8de1adaa3fcc169f0d97c436b8274b?rik=6W1qX6Qp03lNWg&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1504633273314-6a929fcd7090%3fixlib%3drb-0.3.5%26q%3d80%26fm%3djpg%26crop%3dentropy%26cs%3dtinysrgb%26w%3d1080%26fit%3dmax%26ixid%3deyJhcHBfaWQiOjEyMDd9%26s%3de8e0ff2cce3792a276fa84086113a17c&ehk=chx16tzqSRzpfA6BYM4FNaZZ%2fMJwEtxaqHPW1FZb9FI%3d&risl=&pid=ImgRaw&r=0"
+                                                alt="Fashion" />
+                                            <h4 class="title">Fashion</h4>
+                                        </a>
+                                    </div>
+                                    <div class="list-item text-center">
+                                        <a href="#">
+                                            <img src="https://img.freepik.com/free-photo/male-technician-repairing-computer-motherboard-wooden-desk_23-2147923493.jpg?w=740&t=st=1671765056~exp=1671765656~hmac=4c8dffc9558819b4c21b126aaa394150f48adc3be9c8004c0b65d0420709ec00"
+                                                alt="Electronics" />
+                                            <h4 class="title">Electronics</h4>
+                                        </a>
+                                    </div>
+                                    <div class="list-item text-center">
+                                        <a href="#">
+                                            <img src="https://images.unsplash.com/photo-1571380401583-72ca84994796?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                                                alt="Mobiles" />
+                                            <h4 class="title">Mobiles</h4>
+                                        </a>
+                                    </div>
+                                    <div class="list-item text-center">
+                                        <a href="#">
+                                            <img src="https://images.unsplash.com/photo-1578643463396-0997cb5328c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80"
+                                                alt="Appliances" />
+                                            <h4 class="title">Appliances</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="about-us.html">About</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="blog.html">Blog <i class="fas fa-angle-down"></i></a>
+                                <div class="sub-menu single-column-menu">
+                                    <ul>
+                                        <li><a href="blog-detail.html">Blog Details</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="infrastructure.html">Infrastructure</a>
+                                <!-- <div class="sub-menu single-column-menu">
+                                    <ul>
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Register</a></li>
+                                        <li><a href="#">Faq</a></li>
+                                        <li><a href="#">404 Page</a></li>
+                                    </ul>
+                                </div> -->
+                            </li>
+                            <li>
+                                <a href="csr.html">CRS</a>
+                            </li>
+                            <li>
+                                <a href="career.html">Career</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- menu end here -->
+                <div class="header-item item-right">
+                    <p class="list-li">
+                        <a class="list-href" href="career.html">Contact Us</a>
+                    </p>
+                    <!-- mobile menu trigger -->
+                    <div class="mobile-menu-trigger">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+     <!-- Privacy Policy Content -->
+    <!-- Privacy Policy Hero Section -->
+    <section class="privacy-hero">
+        <div class="privacy-hero-overlay"></div>
+        <div class="container">
+            <div class="privacy-hero-content">
+                <h1>Privacy Policy</h1>
+                <p>Your privacy matters to us. Learn how we collect, use, and protect your information.</p>
+                <div class="last-updated">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>Last Updated: June 15, 2023</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Content -->
+    <main class="privacy-policy-container">
+        <div class="container">
+            <!-- Table of Contents -->
+            <div class="policy-toc">
+                <div class="toc-header">
+                    <i class="fas fa-list"></i>
+                    <h3>Table of Contents</h3>
+                </div>
+                <ul class="toc-links">
+                    <li><a href="#introduction">1. Introduction</a></li>
+                    <li><a href="#information-collect">2. Information We Collect</a></li>
+                    <li><a href="#information-use">3. How We Use Your Information</a></li>
+                    <li><a href="#information-sharing">4. Information Sharing and Disclosure</a></li>
+                    <li><a href="#cookies">5. Cookies and Tracking Technologies</a></li>
+                    <li><a href="#data-security">6. Data Security</a></li>
+                    <li><a href="#your-rights">7. Your Rights</a></li>
+                    <li><a href="#changes">8. Changes to This Privacy Policy</a></li>
+                    <li><a href="#contact">9. Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="policy-section" id="introduction">
+                <div class="section-icon">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <h2>1. Introduction</h2>
+                <p>Aameya Polymers ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or engage with our services.</p>
+                <p>Please read this Privacy Policy carefully. By accessing or using our website, you acknowledge that you have read, understood, and agree to be bound by all the terms outlined in this policy.</p>
+                <div class="policy-callout">
+                    <i class="fas fa-lightbulb"></i>
+                    <p>This policy applies to all information collected through our website, as well as any related services, sales, marketing, or events.</p>
+                </div>
+            </div>
+
+            <div class="policy-section" id="information-collect">
+                <div class="section-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h2>2. Information We Collect</h2>
+                
+                <div class="policy-subsection">
+                    <h3>2.1 Personal Information</h3>
+                    <p>We may collect personal information that you voluntarily provide to us when you:</p>
+                    <ul class="policy-list">
+                        <li><i class="fas fa-check-circle"></i> Fill out forms on our website</li>
+                        <li><i class="fas fa-check-circle"></i> Register for an account</li>
+                        <li><i class="fas fa-check-circle"></i> Subscribe to our newsletter</li>
+                        <li><i class="fas fa-check-circle"></i> Request information about our products</li>
+                        <li><i class="fas fa-check-circle"></i> Contact our customer service</li>
+                        <li><i class="fas fa-check-circle"></i> Participate in surveys or promotions</li>
+                    </ul>
+                    <p>This information may include your name, email address, phone number, company name, job title, and any other information you choose to provide.</p>
+                </div>
+
+                <div class="policy-subsection">
+                    <h3>2.2 Automatically Collected Information</h3>
+                    <p>When you visit our website, we may automatically collect certain information about your device, including:</p>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>IP address</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-globe"></i>
+                            <span>Browser type and version</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-laptop"></i>
+                            <span>Operating system</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-history"></i>
+                            <span>Pages visited and time spent</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-link"></i>
+                            <span>Referring website addresses</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Geographic location</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="policy-section" id="information-use">
+                <div class="section-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h2>3. How We Use Your Information</h2>
+                <p>We may use the information we collect for various purposes, including to:</p>
+                <div class="use-cases">
+                    <div class="use-case">
+                        <div class="use-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="use-text">
+                            <h4>Provide & Maintain Services</h4>
+                            <p>Operate our website and deliver the services you have requested</p>
+                        </div>
+                    </div>
+                    <div class="use-case">
+                        <div class="use-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="use-text">
+                            <h4>Process Requests</h4>
+                            <p>Fulfill and manage your orders, payments, and other transactions</p>
+                        </div>
+                    </div>
+                    <div class="use-case">
+                        <div class="use-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <div class="use-text">
+                            <h4>Send Notifications</h4>
+                            <p>Administrative information and updates to our terms and policies</p>
+                        </div>
+                    </div>
+                    <div class="use-case">
+                        <div class="use-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="use-text">
+                            <h4>Respond to Inquiries</h4>
+                            <p>Address your comments, questions, and customer service requests</p>
+                        </div>
+                    </div>
+                    <div class="use-case">
+                        <div class="use-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="use-text">
+                            <h4>Marketing Communications</h4>
+                            <p>Send you information about our products, services, and events</p>
+                        </div>
+                    </div>
+                    <div class="use-case">
+                        <div class="use-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="use-text">
+                            <h4>Analytics</h4>
+                            <p>Monitor and analyze trends, usage, and activities on our website</p>
+                        </div>
+                    </div>
+                    <div class="use-case">
+                        <div class="use-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="use-text">
+                            <h4>Security</h4>
+                            <p>Detect, prevent, and address technical issues and security threats</p>
+                        </div>
+                    </div>
+                    <div class="use-case">
+                        <div class="use-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <div class="use-text">
+                            <h4>Legal Compliance</h4>
+                            <p>Comply with applicable laws, regulations, and legal processes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="policy-section" id="information-sharing">
+                <div class="section-icon">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+                <h2>4. Information Sharing and Disclosure</h2>
+                <p>We may share your information in the following situations:</p>
+                <div class="sharing-scenarios">
+                    <div class="scenario">
+                        <div class="scenario-header">
+                            <i class="fas fa-handshake"></i>
+                            <h4>With Service Providers</h4>
+                        </div>
+                        <p>We may share your information with third-party vendors, service providers, contractors, or agents who perform services for us.</p>
+                    </div>
+                    <div class="scenario">
+                        <div class="scenario-header">
+                            <i class="fas fa-exchange-alt"></i>
+                            <h4>Business Transfers</h4>
+                        </div>
+                        <p>If we are involved in a merger, acquisition, or sale of all or a portion of our assets, your information may be transferred as part of that transaction.</p>
+                    </div>
+                    <div class="scenario">
+                        <div class="scenario-header">
+                            <i class="fas fa-gavel"></i>
+                            <h4>Legal Requirements</h4>
+                        </div>
+                        <p>We may disclose your information if required to do so by law or in response to valid requests by public authorities.</p>
+                    </div>
+                    <div class="scenario">
+                        <div class="scenario-header">
+                            <i class="fas fa-user-check"></i>
+                            <h4>With Your Consent</h4>
+                        </div>
+                        <p>We may share your information with your consent or as otherwise disclosed at the time of collection.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="policy-section" id="cookies">
+                <div class="section-icon">
+                    <i class="fas fa-cookie-bite"></i>
+                </div>
+                <h2>5. Cookies and Tracking Technologies</h2>
+                <p>We use cookies and similar tracking technologies to track activity on our website and hold certain information. Cookies are files with a small amount of data that may include an anonymous unique identifier.</p>
+                <div class="cookie-info">
+                    <div class="cookie-types">
+                        <div class="cookie-type">
+                            <h4>Essential Cookies</h4>
+                            <p>Necessary for the website to function properly</p>
+                        </div>
+                        <div class="cookie-type">
+                            <h4>Functional Cookies</h4>
+                            <p>Remember your preferences and settings</p>
+                        </div>
+                        <div class="cookie-type">
+                            <h4>Analytics Cookies</h4>
+                            <p>Help us understand how visitors interact with our website</p>
+                        </div>
+                        <div class="cookie-type">
+                            <h4>Marketing Cookies</h4>
+                            <p>Track visitors across websites to display relevant advertisements</p>
+                        </div>
+                    </div>
+                </div>
+                <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our website.</p>
+            </div>
+
+            <div class="policy-section" id="data-security">
+                <div class="section-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h2>6. Data Security</h2>
+                <p>We implement appropriate technical and organizational measures to protect the security of your personal information. However, please be aware that no method of transmission over the Internet or method of electronic storage is 100% secure.</p>
+                <div class="security-measures">
+                    <div class="security-measure">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>SSL Encryption</span>
+                    </div>
+                    <div class="security-measure">
+                        <i class="fas fa-user-lock"></i>
+                        <span>Access Controls</span>
+                    </div>
+                    <div class="security-measure">
+                        <i class="fas fa-server"></i>
+                        <span>Secure Servers</span>
+                    </div>
+                    <div class="security-measure">
+                        <i class="fas fa-eye-slash"></i>
+                        <span>Data Minimization</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="policy-section" id="your-rights">
+                <div class="section-icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <h2>7. Your Rights</h2>
+                <p>Depending on your location, you may have certain rights regarding your personal information, including:</p>
+                <div class="rights-accordion">
+                    <div class="right-item">
+                        <div class="right-header">
+                            <i class="fas fa-search"></i>
+                            <h4>Right to Access</h4>
+                        </div>
+                        <div class="right-content">
+                            <p>You can request copies of your personal information that we hold.</p>
+                        </div>
+                    </div>
+                    <div class="right-item">
+                        <div class="right-header">
+                            <i class="fas fa-edit"></i>
+                            <h4>Right to Rectification</h4>
+                        </div>
+                        <div class="right-content">
+                            <p>You can request that we correct any information you believe is inaccurate or incomplete.</p>
+                        </div>
+                    </div>
+                    <div class="right-item">
+                        <div class="right-header">
+                            <i class="fas fa-trash-alt"></i>
+                            <h4>Right to Erasure</h4>
+                        </div>
+                        <div class="right-content">
+                            <p>You can request that we delete your personal information in certain circumstances.</p>
+                        </div>
+                    </div>
+                    <div class="right-item">
+                        <div class="right-header">
+                            <i class="fas fa-ban"></i>
+                            <h4>Right to Object</h4>
+                        </div>
+                        <div class="right-content">
+                            <p>You can object to our processing of your personal information in certain circumstances.</p>
+                        </div>
+                    </div>
+                    <div class="right-item">
+                        <div class="right-header">
+                            <i class="fas fa-file-export"></i>
+                            <h4>Right to Data Portability</h4>
+                        </div>
+                        <div class="right-content">
+                            <p>You can request that we transfer the information we have collected to another organization or directly to you.</p>
+                        </div>
+                    </div>
+                    <div class="right-item">
+                        <div class="right-header">
+                            <i class="fas fa-times-circle"></i>
+                            <h4>Right to Withdraw Consent</h4>
+                        </div>
+                        <div class="right-content">
+                            <p>You can withdraw your consent at any time where we relied on your consent to process your information.</p>
+                        </div>
+                    </div>
+                </div>
+                <p>To exercise these rights, please contact us using the information provided in the "Contact Us" section below.</p>
+            </div>
+
+            <div class="policy-section" id="changes">
+                <div class="section-icon">
+                    <i class="fas fa-history"></i>
+                </div>
+                <h2>8. Changes to This Privacy Policy</h2>
+                <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top of this policy.</p>
+                <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+                <div class="policy-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">June 15, 2023</div>
+                        <div class="timeline-content">
+                            <h4>Current Version</h4>
+                            <p>Updated to reflect new data processing activities</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">January 10, 2023</div>
+                        <div class="timeline-content">
+                            <h4>Previous Update</h4>
+                            <p>Updated to comply with new regulations</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">March 5, 2022</div>
+                        <div class="timeline-content">
+                            <h4>Initial Version</h4>
+                            <p>First publication of our privacy policy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="policy-section" id="contact">
+                <div class="section-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h2>9. Contact Us</h2>
+                <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+                <div class="contact-card">
+                    <div class="contact-logo">
+                        <img src="assets/images/logo.png" alt="Aameya Polymers Logo">
+                    </div>
+                    <div class="contact-details">
+                        <h3>Aameya Polymers</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:privacy@aameyapolymers.com">privacy@aameyapolymers.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 123 456 7890</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Industrial Area, Mumbai, Maharashtra, India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer" data-scroll-section>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Get in Touch</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91-79-35084100</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div class="email-group">
+                                <a href="mailto:sales@Aameyapolymers.com">sales@Aameyapolymers.com</a>
+                                <a href="mailto:exports@Aameyapolymers.com">exports@Aameyapolymers.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="address">
+                                <p>Aameya Polymers Pvt. Ltd.</p>
+                                <p>508-515, The Capital - 2</p>
+                                <p>Near Hetarth Party Plot</p>
+                                <p>Science City Road</p>
+                                <p>Ahmedabad - 380 060</p>
+                                <p>Gujarat - India</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#infrastructure">Infrastructure</a></li>
+                        <li><a href="#csr">CSR</a></li>
+                        <li><a href="#sustainability">Sustainability</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#career">Career</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#inquiry">Inquiry</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">BOPP Pinch Bottom Bags</a></li>
+                        <li><a href="#">BOPP Laminated PP Woven Bags</a></li>
+                        <li><a href="#">Paper / Poly Bags</a></li>
+                        <li><a href="#">Block Bottom - Open Mouth & Valve Bags</a></li>
+                        <li><a href="#">PP Woven Bags</a></li>
+                        <li><a href="#">PP Woven Fabrics</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.png" alt="Aameya Polymers Logo" />
+                    </div>
+                    <p class="footer-about">
+                        Leading manufacturer of PP woven & BOPP bags, committed to quality
+                        and innovation since 1996.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 Aameya Polymers Pvt. Ltd. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/privacy-policy.js"></script>
+</body>
+</html>
