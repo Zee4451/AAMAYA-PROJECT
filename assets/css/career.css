@@ -1,8 +1,8 @@
 /* Career & Contact Hero Sections */
 :root {
-    --primary-color: #2B6CB0;
-    --primary-light: rgba(43, 108, 176, 0.1);
-    --primary-border: rgba(43, 108, 176, 0.3);
+    --primary-color: #ea4636; /* Changed from #2B6CB0 to match website palette */
+    --primary-light: rgba(234, 70, 54, 0.1); /* Changed from rgba(43, 108, 176, 0.1) */
+    --primary-border: rgba(234, 70, 54, 0.3); /* Changed from rgba(43, 108, 176, 0.3) */
     --dark-color: #2B2A28;
 }
 
@@ -83,7 +83,7 @@ html, body {
     letter-spacing: 2px;
     margin-bottom: 20px;
     border: 1px solid var(--primary-border);
-    color: var(--primary-color);
+    color: #ffffff;
 }
 
 .hero-content h1 {
@@ -276,7 +276,6 @@ html, body {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     padding: 30px;
-    transform: translateY(30px);
 }
 
 .form-header {
@@ -640,10 +639,6 @@ html, body {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Form Sections Parallax */
-.form-wrapper:hover {
-    transform: translateY(-5px) !important;
-}
 
 /* Map Container Parallax */
 .map-container {
@@ -812,4 +807,25 @@ html, body {
         width: 100%;
         text-align: center;
     }
+}
+
+/* Position field styles */
+#position {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#position:focus {
+    border-color: #ea4636;
+    outline: none;
+}
+
+/* Datalist dropdown styling */
+input[list]::-webkit-calendar-picker-indicator {
+    color: #ea4636;
+    cursor: pointer;
 }

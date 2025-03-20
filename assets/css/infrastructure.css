@@ -1418,73 +1418,7 @@
     }
 
 
-        /* Manufacturing Overview Section */
-        .manufacturing-overview {
-            padding: 100px 0;
-            background-color: #f9f9f9;
-        }
-
-        .facility-highlights {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .facility-stat {
-            flex: 1;
-            min-width: 220px;
-            max-width: 280px;
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 30px 20px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-
-        .facility-stat:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .stat-icon {
-            width: 70px;
-            height: 70px;
-            margin: 0 auto 20px;
-            background-color: rgba(234, 70, 54, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .stat-icon i {
-            font-size: 28px;
-            color: #ea4636;
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: #1a1a1a;
-            margin-bottom: 5px;
-        }
-
-        .stat-label {
-            font-size: 1rem;
-            font-weight: 500;
-            color: #ea4636;
-            margin-bottom: 15px;
-        }
-
-        .facility-stat p {
-            font-size: 0.9rem;
-            color: #666;
-            margin: 0;
-        }
-
+       
         /* Production Equipment Section */
         .production-equipment {
             padding: 0px 0;

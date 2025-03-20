@@ -49,7 +49,7 @@
 .section-tag {
     display: inline-block;
     background-color: rgba(234, 70, 54, 0.2);
-    color: #ea4636;
+    color: #ffffff;
     padding: 8px 16px;
     border-radius: 30px;
     font-size: 0.9rem;
@@ -111,7 +111,8 @@
 }
 
 .btn-outline:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #ffffff;
+    color:#1a1a1a;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
 }
@@ -382,4 +383,40 @@
     .scroll-indicator {
         bottom: 20px;
     }
+}
+
+/* Card Link Styles */
+.card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    width: 100%;
+}
+
+.card-link:hover {
+    color: inherit;
+}
+
+.card-link .category-link {
+    display: inline-flex;
+    align-items: center;
+    color: #ea4636;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.card-link .category-link i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.card-link:hover .category-link {
+    color: #d03a2b;
+}
+
+.card-link:hover .category-link i {
+    transform: translateX(5px);
 }

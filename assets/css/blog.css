@@ -56,6 +56,10 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.blog-hero-content h1,p {
+    color: #fff !important;
+}
+
 .blog-hero-content h1 {
     font-size: 4rem;
     line-height: 1.2;
@@ -212,4 +216,54 @@
     .post-content h3 {
         font-size: 1.2rem;
     }
+}
+
+/* Post Link Styles */
+.post-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    width: 100%;
+}
+
+.post-link:hover {
+    color: inherit;
+}
+
+.post-link .read-more {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: gap 0.3s ease;
+    cursor: pointer;
+}
+
+.post-link:hover .read-more {
+    gap: 12px;
+}
+
+.post-link .read-more i {
+    font-size: 14px;
+}
+
+/* Ensure the post-category maintains its styling */
+.post-link .post-category {
+    display: inline-block;
+    padding: 6px 12px;
+    background: var(--color-primary);
+    color: var(--color-light);
+    border-radius: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Maintain hover effect on the post image */
+.post-link:hover .post-image img {
+    transform: scale(1.1);
 }
