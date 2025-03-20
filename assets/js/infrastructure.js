@@ -77,6 +77,25 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.counter-card').forEach(card => {
         counterObserver.observe(card);
     });
+    // Tab Navigation for Equipment Section
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+    
+    if (tabButtons.length > 0 && tabPanes.length > 0) {
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetTab = button.getAttribute('data-tab');
+                
+                // Remove active class from all buttons and panes
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabPanes.forEach(pane => pane.classList.remove('active'));
+                
+                // Add active class to clicked button and corresponding pane
+                button.classList.add('active');
+                document.getElementById(targetTab).classList.add('active');
+            });
+        });
+    }
 });
 
 
