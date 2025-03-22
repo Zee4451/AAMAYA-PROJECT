@@ -646,15 +646,16 @@
 
 .section-tag {
     display: inline-block;
-    background-color: rgba(234, 70, 54, 0.1);
-    color: #ea4636;
+    background-color: rgba(234, 70, 54, 0.2);
+    color: #ffffff;
     padding: 8px 16px;
     border-radius: 30px;
     font-size: 0.9rem;
     font-weight: 500;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
-
 .section-header h2 {
     font-size: 2.5rem;
     color: #1a1a1a;
