@@ -36,10 +36,9 @@
     position: relative;
     z-index: 3;
     width: 100%;
-    max-width: 1400px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 0 30px;
-}
+    padding: 120px 20px;}
 
 .product-hero-content {
     max-width: 650px;

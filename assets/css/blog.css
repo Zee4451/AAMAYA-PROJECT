@@ -40,6 +40,8 @@
 .blog-hero-content {
     max-width: 800px;
     margin-bottom: 60px;
+    margin: 0 auto;
+    padding: 70px 20px;
 }
 
 .section-tag {
